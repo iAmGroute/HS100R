@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.2.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="5" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="PCB_CONNECTOR">
+<smd name="1.1T" x="-3.2" y="1.9" dx="0.8" dy="1.1" layer="1"/>
+<smd name="1.5B" x="3.75" y="1.9" dx="1.9" dy="1.1" layer="16"/>
+<smd name="1.2B" x="-1.6" y="1.9" dx="0.8" dy="1.1" layer="16"/>
+<smd name="1.3T" x="0" y="1.9" dx="0.8" dy="1.1" layer="1"/>
+<smd name="1.4B" x="1.6" y="1.9" dx="0.8" dy="1.1" layer="16"/>
+<smd name="2.1B" x="-3.2" y="-1.9" dx="0.8" dy="1.1" layer="16"/>
+<smd name="2.2B" x="-1.6" y="-1.9" dx="0.8" dy="1.1" layer="16"/>
+<smd name="2.3B" x="0" y="-1.9" dx="0.8" dy="1.1" layer="16"/>
+<smd name="2.4B" x="2.45" y="-1.9" dx="2.5" dy="1.1" layer="16"/>
+<wire x1="-4.3" y1="0.4" x2="-4.3" y2="-0.4" width="0" layer="46"/>
+<wire x1="-3.8" y1="-0.9" x2="3.8" y2="-0.9" width="0" layer="46"/>
+<wire x1="4.3" y1="-0.4" x2="4.3" y2="0.4" width="0" layer="46"/>
+<wire x1="3.8" y1="0.9" x2="-3.8" y2="0.9" width="0" layer="46"/>
+<wire x1="-4.3" y1="0.4" x2="-3.8" y2="0.9" width="0" layer="46" curve="-90"/>
+<wire x1="-4.3" y1="-0.4" x2="-3.8" y2="-0.9" width="0" layer="46" curve="90"/>
+<wire x1="4.3" y1="-0.4" x2="3.8" y2="-0.9" width="0" layer="46" curve="-90"/>
+<wire x1="4.3" y1="0.4" x2="3.8" y2="0.9" width="0" layer="46" curve="90"/>
+<smd name="1.1B" x="-3.2" y="1.9" dx="0.8" dy="1.1" layer="16"/>
+<smd name="1.2T" x="-1.6" y="1.9" dx="0.8" dy="1.1" layer="1"/>
+<smd name="1.3B" x="0" y="1.9" dx="0.8" dy="1.1" layer="16"/>
+<smd name="1.4T" x="1.6" y="1.9" dx="0.8" dy="1.1" layer="1"/>
+<smd name="1.5T" x="3.75" y="1.9" dx="1.9" dy="1.1" layer="1"/>
+<smd name="2.4T" x="2.45" y="-1.9" dx="2.5" dy="1.1" layer="1"/>
+<smd name="2.3T" x="0" y="-1.9" dx="0.8" dy="1.1" layer="1"/>
+<smd name="2.2T" x="-1.6" y="-1.9" dx="0.8" dy="1.1" layer="1"/>
+<smd name="2.1T" x="-3.2" y="-1.9" dx="0.8" dy="1.1" layer="1"/>
+<text x="0" y="0" size="0.5" layer="25" align="center">&gt;NAME</text>
+<polygon width="0" layer="48">
+<vertex x="-4.3" y="0.4" curve="-90"/>
+<vertex x="-3.8" y="0.9"/>
+<vertex x="3.8" y="0.9" curve="-90"/>
+<vertex x="4.3" y="0.4"/>
+<vertex x="4.3" y="-0.4" curve="-90"/>
+<vertex x="3.8" y="-0.9"/>
+<vertex x="-3.8" y="-0.9" curve="-90"/>
+<vertex x="-4.3" y="-0.4"/>
+</polygon>
+<wire x1="-4.3" y1="0.4" x2="-4.3" y2="-0.4" width="0" layer="20"/>
+<wire x1="-3.8" y1="-0.9" x2="3.8" y2="-0.9" width="0" layer="20"/>
+<wire x1="4.3" y1="-0.4" x2="4.3" y2="0.4" width="0" layer="20"/>
+<wire x1="3.8" y1="0.9" x2="-3.8" y2="0.9" width="0" layer="20"/>
+<wire x1="-4.3" y1="0.4" x2="-3.8" y2="0.9" width="0" layer="20" curve="-90"/>
+<wire x1="-4.3" y1="-0.4" x2="-3.8" y2="-0.9" width="0" layer="20" curve="90"/>
+<wire x1="4.3" y1="-0.4" x2="3.8" y2="-0.9" width="0" layer="20" curve="-90"/>
+<wire x1="4.3" y1="0.4" x2="3.8" y2="0.9" width="0" layer="20" curve="90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PCB_CONNECTOR">
+<pin name="5V" x="12.7" y="5.08" length="short" direction="pas" rot="R180"/>
+<pin name="RELAY" x="12.7" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="3.3V" x="12.7" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="SPI1" x="-12.7" y="2.54" length="short" direction="pas"/>
+<pin name="GND" x="12.7" y="-5.08" length="short" direction="pas" rot="R180"/>
+<pin name="SPI2" x="-12.7" y="0" length="short" direction="pas"/>
+<pin name="SPI3" x="-12.7" y="-2.54" length="short" direction="pas"/>
+<pin name="SPI4" x="-12.7" y="-5.08" length="short" direction="pas"/>
+<pin name="TEST" x="-12.7" y="5.08" length="short" direction="pas"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<text x="0" y="8.89" size="1.778" layer="95" align="center">&gt;NAME</text>
+<wire x1="8.255" y1="5.715" x2="9.525" y2="5.08" width="0.254" layer="94"/>
+<wire x1="9.525" y1="5.08" x2="8.255" y2="4.445" width="0.254" layer="94"/>
+<wire x1="8.255" y1="4.445" x2="8.255" y2="5.715" width="0.254" layer="94"/>
+<wire x1="8.255" y1="0" x2="9.525" y2="0.635" width="0.254" layer="94"/>
+<wire x1="9.525" y1="0.635" x2="9.525" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="9.525" y1="-0.635" x2="8.255" y2="0" width="0.254" layer="94"/>
+<wire x1="8.255" y1="2.54" x2="9.525" y2="3.175" width="0.254" layer="94"/>
+<wire x1="9.525" y1="3.175" x2="9.525" y2="1.905" width="0.254" layer="94"/>
+<wire x1="9.525" y1="1.905" x2="8.255" y2="2.54" width="0.254" layer="94"/>
+<wire x1="8.255" y1="-4.445" x2="9.525" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="9.525" y1="-5.08" x2="8.255" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="8.255" y1="-5.715" x2="8.255" y2="-4.445" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PCB_CONNECTOR" prefix="J">
+<gates>
+<gate name="G$1" symbol="PCB_CONNECTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PCB_CONNECTOR">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="2.3B 2.3T"/>
+<connect gate="G$1" pin="5V" pad="2.1B 2.1T"/>
+<connect gate="G$1" pin="GND" pad="2.4B 2.4T"/>
+<connect gate="G$1" pin="RELAY" pad="2.2B 2.2T"/>
+<connect gate="G$1" pin="SPI1" pad="1.2B 1.2T"/>
+<connect gate="G$1" pin="SPI2" pad="1.3B 1.3T"/>
+<connect gate="G$1" pin="SPI3" pad="1.4B 1.4T"/>
+<connect gate="G$1" pin="SPI4" pad="1.5B 1.5T"/>
+<connect gate="G$1" pin="TEST" pad="1.1B 1.1T"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

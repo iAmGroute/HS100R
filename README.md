@@ -1,2 +1,44 @@
-# HS100R
-A custom pcb for the TP-Link HS100 and HS110 smart plugs
+# HS100R  
+  
+A custom pcb for the TP-Link HS100 and HS110 smart plugs.  
+  
+### Features:  
+  
+  - Uses the low power nRF51 SoC (+4dBm 2.4GHz) instead of a WiFi module.  
+    Compatible with the popular nRF24 series modules.  
+  
+  - Maintains the features of the original HS100.  
+  
+  - Added sensors:  
+  
+Sensor      | MPN  
+------------|-----  
+Light       | LTR-30XALS  
+Pressure    | DPS310  
+Humidity    | SI7006-A20  
+Temperature | SI7006-A20  
+  
+  - Adds low frequency front end for mains Voltage and Current sensing, wired to the ADC of the nRF51:  
+    The idea is to function as a very basic oscilloscope.  
+    Full bandwidth: 10 KHz  
+      A gpio is wired to a capacitor at the input of the ADC, so that the bandwidth can be limited to around 1 KHz on demand.  
+    Sampling frequency: around 40 KSps (at 8 bits, around half at 10 bits)  
+    For the current sensing side, a current shunt resistor is required at the relay's board  
+    (already installed on the HS110 - 1 mOhm, will require cutting the board on the HS100 - 4 mOhm recommended)  
+    Two low noise PGAs (MAX9939) are added in series to give a high dynamic range.  
+    Max gain limitted by the front PGA's noise at around 3000x (measures a few tens of mA with 4 mOhm shunt)  
+  
+  - The above can also be used to do Point-on-Wave switching:  
+    Turn the relay on when the instantaneous voltage is near zero  
+    and turn it off when the instantaneous current is near zero.  
+    This is done to prevend arcing on the contacts of the relay and greately improve its life span  
+    especially when switching heavy loads.  
+  
+### Prototype pictures and screenshots:  
+  
+Comming soon !  
+  
+### Note about revisions:  
+  
+Revisions that begin with 0 (e.g. Rev0B) are prototypes and only for reference and development.  
+No fully working design is available yet.  

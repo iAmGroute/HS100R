@@ -21,12 +21,12 @@ Temperature | SI7006-A20
   - Adds low frequency front end for mains Voltage and Current sensing, wired to the ADC of the nRF51:  
     The idea is to function as a very basic oscilloscope.  
     Full bandwidth: 10 KHz  
-      A gpio is wired to a capacitor at the input of the ADC, so that the bandwidth can be limited to around 1 KHz on demand.  
-    Sampling frequency: around 40 KSps (at 8 bits, around half at 10 bits)  
-    For the current sensing side, a current shunt resistor is required at the relay's board  
-    (already installed on the HS110 - 1 mOhm, will require cutting the board on the HS100 - 4 mOhm recommended)  
+      A gpio is wired to a low-pass filter at the input of the ADC, so that the bandwidth can be limited to around 1 KHz on demand.  
+    Sampling frequency: around 40K samples/s (at 8 bits; around 20K samples/s at 10 bits)  
+    For the current sensing side, a shunt resistor is required at the relay's board  
+    (already installed on the HS110 - 1 mOhm, but will require cutting the board on the HS100 - 4 mOhm recommended)  
     Two low noise PGAs (MAX9939) are added in series to give a high dynamic range.  
-    Max gain limitted by the front PGA's noise at around 3000x (measures a few tens of mA with 4 mOhm shunt)  
+    Max gain is limitted by the first PGA's noise at around 3000x (measures a few tens of mA with 4 mOhm shunt)  
   
   - The above can also be used to do Point-on-Wave switching:  
     Turn the relay on when the instantaneous voltage is near zero  

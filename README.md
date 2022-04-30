@@ -1,6 +1,6 @@
 # HS100R  
   
-A custom pcb for the TP-Link HS100 and HS110 smart plugs.  
+A custom pcb for the [TP-Link HS100 and HS110](https://www.tp-link.com/en/home-networking/smart-plug/hs110/) smart plugs.  
   
 ### Features:  
   
@@ -34,11 +34,21 @@ Temperature | SI7006-A20
     This is done to prevend arcing on the contacts of the relay and greately improve its life span  
     especially when switching heavy loads.  
   
-### Prototype pictures and screenshots:  
+### Prototype images and screenshots:  
   
-Comming soon !  
+#### Photos of the whole unit:
+External photo 1 | External photo 2
+-----------------|------------------
+![Photo 1](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TP-Link-Kasa-Amazon-Alexa-Zubeh%C3%B6r-Smart-Home-WLAN-Steckdose-HS110.jpg/768px-TP-Link-Kasa-Amazon-Alexa-Zubeh%C3%B6r-Smart-Home-WLAN-Steckdose-HS110.jpg) | ![Photo 2](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/TP-Link-Kasa-Amazon-Alexa-Zubeh%C3%B6r-Smart-Home-WLAN-Steckdose-HS110.4.jpg/850px-TP-Link-Kasa-Amazon-Alexa-Zubeh%C3%B6r-Smart-Home-WLAN-Steckdose-HS110.4.jpg)
   
+#### Custom PCB:
+Top side | Bottom side
+---------|-------------
+![PCB top side](Rev0A/Images/HS100R%20Rev0A%20600dpi%20top.jpg) | ![PCB bottom side](Rev0A/Images/HS100R%20Rev0A%20600dpi%20bot.jpg)
+
+#### Oscilloscope function screenshot ([Processing](https://en.wikipedia.org/wiki/Processing_(programming_language)) app):
+![Screenshot](Rev0A/HS100R%20ADC%20Graphs/final.png)
+
 ### Note about revisions:  
   
 Revisions that begin with 0 (e.g. Rev0B) are prototypes and only for reference and development.  
-No fully working design is available yet.  

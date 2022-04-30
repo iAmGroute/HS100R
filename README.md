@@ -52,3 +52,4 @@ Top side | Bottom side
 ### Note about revisions:  
   
 Revisions that begin with 0 (e.g. Rev0B) are prototypes and only for reference and development.  
+Unfortunately, TP-Link has discontinued these smart-plugs (at least in Europe), so development on this project has stopped.
